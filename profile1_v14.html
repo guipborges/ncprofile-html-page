@@ -1,0 +1,6418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://langdale.com.au/2005/Message#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<title>Profile Documentation</title>
+<style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+
+
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+</head>
+<body>
+<h1>Profile Documentation</h1>
+<p/>
+<p class="declaration">
+					Profile namespace:
+					<span class="namespace">http://ucte.org/2009/profile1_v14#</span>
+</p>
+<h1>Concrete Classes</h1>
+<div id="ACLineSegment" class="group">
+<a href="#ACLineSegment">
+<h2 class="concrete">ACLineSegment</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.</p>
+<p class="note">Series compensators can be modeled as ACLineSegement.  The attribute Conductor.length is required only when used in conjunction with a Mutual Coupling.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">b0ch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.b0ch">Conductor</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">bch</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.bch">Conductor</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">g0ch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.g0ch">Conductor</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">gch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.gch">Conductor</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">length</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#LongLength">LongLength</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.length">Conductor</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">r</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.r">Conductor</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">r0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.r0">Conductor</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">x</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.x">Conductor</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">x0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Conductor.x0">Conductor</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#ConductingEquipment.BaseVoltage">ConductingEquipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="BaseVoltage" class="group">
+<a href="#BaseVoltage">
+<h2 class="concrete">BaseVoltage</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">Collection of BaseVoltages which is used to verify that the BusbarSection.BaseVoltage and other voltage attributes in the CIM are given a value existing in the collection.</p>
+<p class="note"/>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="BaseVoltage.isDC">isDC</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">If true, this is a direct current base voltage and items assigned to this base voltage are also associated with a direct current capabilities.   False indicates alternating current.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="BaseVoltage.nominalVoltage">nominalVoltage</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+<p class="comment">The PowerSystemResource's base voltage.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ControlArea" class="group">
+<a href="#ControlArea">
+<h2 class="concrete">ControlArea</h2>
+</a>
+<p class="package">ControlArea</p>
+<p class="comment">A &lt;b&gt;control area &lt;/b&gt;is a grouping of &lt;b&gt;generating units&lt;/b&gt; and/or loads and a cutset of tie lines (as &lt;b&gt;terminals&lt;/b&gt;) which may be used for a variety of purposes including automatic generation control, powerflow solution area interchange control specification, and input to load forecasting.   Note that any number of overlapping control area specifications can be superimposed on the physical model.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="ControlArea.netInterchange">netInterchange</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">The specified positive net interchange into the control area.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ControlArea.pTolerance">pTolerance</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">Active power net interchange tolerance</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ControlAreaGeneratingUnit" class="group">
+<a href="#ControlAreaGeneratingUnit">
+<h2 class="concrete">ControlAreaGeneratingUnit</h2>
+</a>
+<p class="package">ControlArea</p>
+<p class="comment">A control area generating unit. This class is needed so that alternate control area definitions may include the same generating unit.   Note only one instance within a control area should reference a specific generating unit.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="ControlAreaGeneratingUnit.ControlArea">ControlArea</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ControlArea">ControlArea</a>
+</p>
+</td>
+<td>
+<p class="comment">The parent control area for the generating unit specifications.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ControlAreaGeneratingUnit.GeneratingUnit">GeneratingUnit</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#GeneratingUnit">GeneratingUnit</a>
+</p>
+</td>
+<td>
+<p class="comment">The generating unit specified for this control area.  Note that a control area should include a GeneratingUnit only once.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="CurrentLimit" class="group">
+<a href="#CurrentLimit">
+<h2 class="concrete">CurrentLimit</h2>
+</a>
+<p class="package">OperationalLimits</p>
+<p class="comment">Operational limit on current.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="CurrentLimit.value">value</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#CurrentFlow">CurrentFlow</a>
+</p>
+</td>
+<td>
+<p class="comment">Limit on current flow.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">OperationalLimitSet</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#OperationalLimitSet">OperationalLimitSet</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#OperationalLimit.OperationalLimitSet">OperationalLimit</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">OperationalLimitType</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#OperationalLimitType">OperationalLimitType</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#OperationalLimit.OperationalLimitType">OperationalLimit</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="CurveData" class="group">
+<a href="#CurveData">
+<h2 class="concrete">CurveData</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">Data point values for defining a curve or schedule</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="CurveData.xvalue">xvalue</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">The data value of the X-axis variable,  depending on the X-axis units</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="CurveData.y1value">y1value</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">The data value of the  first Y-axis variable, depending on the Y-axis units</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="CurveData.y2value">y2value</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">The data value of the second Y-axis variable (if present), depending on the Y-axis units</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="CurveData.CurveSchedule">CurveSchedule</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Curve">Curve</a>
+</p>
+</td>
+<td>
+<p class="comment">The Curve defined by this CurveData.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="EnergyConsumer" class="group">
+<a href="#EnergyConsumer">
+<h2 class="concrete">EnergyConsumer</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Generic user of energy - a  point of consumption on the power system model</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="EnergyConsumer.LoadResponse">LoadResponse</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#LoadResponseCharacteristic">LoadResponseCharacteristic</a>
+</p>
+</td>
+<td>
+<p class="comment">The load response characteristic of this load.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#ConductingEquipment.BaseVoltage">ConductingEquipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="FossilFuel" class="group">
+<a href="#FossilFuel">
+<h2 class="concrete">FossilFuel</h2>
+</a>
+<p class="package">Production</p>
+<p class="comment">The fossil fuel consumed by the non-nuclear thermal generating units, e.g., coal, oil, gas</p>
+<p class="note">The UCTE profile allows only one type of fuel per ThermalGeneratingUnit.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="FossilFuel.fossilFuelType">fossilFuelType</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#FuelType">FuelType</a>
+</p>
+</td>
+<td>
+<p class="comment">The type of fossil fuel, such as coal, oil, or gas.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="GeneratingUnit" class="group">
+<a href="#GeneratingUnit">
+<h2 class="concrete">GeneratingUnit</h2>
+</a>
+<p class="package">Production</p>
+<p class="comment">A single or set of synchronous machines for converting mechanical power into alternating-current power. For example, individual machines within a set may be defined for scheduling purposes while a single control signal is derived for the set. In this case there would be a GeneratingUnit for each member of the set and an additional GeneratingUnit corresponding to the set.</p>
+<p class="note">One GeneratingUnit or its subtype is to be modeled for each SynchronousMachine.</p>
+<p class="note">In case the type of generating unit (such as hydro, coal, nuclear, ...) is not well known the GeneratingUnit class may be used as a concrete class in the exchange.  If the type is well known, then an appropriate subtype of GeneratingUnit such as HydroGeneratingUnit should be used in the exchange file.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="GeneratingUnit.governorSCD">governorSCD</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerCent">PerCent</a>
+</p>
+</td>
+<td>
+<p class="comment">Governor Speed Changer Droop.   This is the change in generator power output divided by the change in frequency normalized by the nominal power of the generator and the nominal frequency and expressed in percent and negated. A positive value of speed change droop provides additional generator output upon a drop in frequency.</p>
+<p class="note">This is for Short Circuit Only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="GeneratingUnit.maximumAllowableSpinningReserve">maximumAllowableSpinningReserve</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">Maximum allowable spinning reserve. Spinning reserve will never be considered greater than this value regardless of the current operating point.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="GeneratingUnit.maxOperatingP">maxOperatingP</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">This is the maximum operating active power limit the dispatcher can enter for this unit</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="GeneratingUnit.minOperatingP">minOperatingP</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">This is the minimum operating active power limit the dispatcher can enter for this unit.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="GeneratingUnit.nominalP">nominalP</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">The nominal power of the generating unit.  Used to give precise meaning to percentage based attributes such as the govenor speed change droop (govenorSCD attribute).</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="GeneratingUnit.normalPF">normalPF</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Generating unit economic participation factor</p>
+<p class="note">For UCTE only one Generating per control area should be non-zero.  The attribute is optional on a GeneratingUnit and the value can be assumed to be zero if missing.   This minimizes the data that must be exchanged.   By convention the non-zero value is specified as one.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="GeneratingUnit.startupCost">startupCost</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Money">Money</a>
+</p>
+</td>
+<td>
+<p class="comment">The initial startup cost incurred for each start of the GeneratingUnit.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="GeneratingUnit.variableCost">variableCost</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Money">Money</a>
+</p>
+</td>
+<td>
+<p class="comment">The variable cost component of production per unit of ActivePower.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="GeographicalRegion" class="group">
+<a href="#GeographicalRegion">
+<h2 class="concrete">GeographicalRegion</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">A geographical region of a power system network model.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="HydroGeneratingUnit" class="group">
+<a href="#HydroGeneratingUnit">
+<h2 class="concrete">HydroGeneratingUnit</h2>
+</a>
+<p class="package">Production</p>
+<p class="comment">A generating unit whose prime mover is a hydraulic turbine (e.g., Francis, Pelton, Kaplan)</p>
+<h3>Inherited Members</h3>
+</div>
+<div id="HydroPump" class="group">
+<a href="#HydroPump">
+<h2 class="concrete">HydroPump</h2>
+</a>
+<p class="package">Production</p>
+<p class="comment">A synchronous motor-driven pump, typically associated with a pumped storage plant</p>
+<p class="note">A HydroPump is included in the profile to indicate the associated SynchronousMachine can run in pump mode.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="HydroPump.DrivenBy_SynchronousMachine">DrivenBy_SynchronousMachine</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#SynchronousMachine">SynchronousMachine</a>
+</p>
+</td>
+<td>
+<p class="comment">The synchronous machine drives the turbine which moves the water from a low elevation to a higher elevation. The direction of machine rotation for pumping may or may not be the same as for generating.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="IEC61970CIMVersion" class="group">
+<a href="#IEC61970CIMVersion">
+<h2 class="concrete">IEC61970CIMVersion</h2>
+</a>
+<p class="package"/>
+<p class="comment">This is the IEC 61970 CIM version number assigned to this UML model file.</p>
+<p class="note">This is the UCTE profile.     We have been using file naming conventions, the profile namespace, and comments here in the profile under IEC61970CIMVersion class.</p>
+<p class="note">Profile1_v9 - dated 2009-01-27   - removed SeriesCompensator and ApparentPowerLimit, added TopologicalNode.equivalent</p>
+<p class="note">Profile1_v10 - dated 2009-01-29  - documentation added on Terminal.sequenceNumber.  Added notes to GeneratingUnit.normalPF attribute in profile.</p>
+<p class="note">Profile1_v11 - dated 2009-02-04  - Made optional SynchronousMachine.InitialReactiveCapabilityCurve, minQ, maxQ.    Rename of SvTapStep.tapRatio to SvTapStep.continuousPosition.   Multiplicity for SvShuntCompensatorSections.continuousSections made manditory.   Removed SvShuntCompensatorSections.sections and SvTapStep.position from profile.</p>
+<p class="note">Profile 1_v12 - dated 2009-03-17 - Made all Short Circuit classes and Attributes Optional, made all voltage dependency / coeficient model attributes Optional, added notes from the UCTE Mapping Spreadsheet and added a few clarification notes.</p>
+<p class="note">Profile 1_v13 - dated 2009-03-19 - Made the GeneratingUnit.maximumAllowableSpinningReserve Optional and made all of the PhaseTapChanger attributes Optional.</p>
+<p class="note">Profile 1_v14 - dated 2009-05-10 - Added some comments to classes based on input from IOP test and added BusBarSection and Line Classes.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="IEC61970CIMVersion.date">date</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">dateTime</p>
+</td>
+<td>
+<p class="comment">The date of release of the model version.  Of the form 2008-12-22 for example if the date was the twentysecond day of December in 2008.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="IEC61970CIMVersion.version">version</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Version number of the model.   Of the form IEC61970CIM14v01 for example.</p>
+<p class="comment">For UCTE on 2009-01-15 added the terminal.SequenceNumber</p>
+<p class="comment">added some clarification of MutualCoupling</p>
+<p class="comment">For UCTE on 2009-0116 added IdentifiedObject inhereitance to OperationalLimitType class</p>
+<p class="comment">For UCTE on 2009-01-17 added the TopologicalNode-BaseVoltage association.</p>
+<p class="comment">For UCTE on 2009-01-27 added the TopologicalNode.equivalent attribute.</p>
+<p class="comment">For UCTE on 2009-02-04 renamed SvTapStep.tapRatio to SvTapStep.continuousPosition.</p>
+<p class="comment">Multipliicty made optional or SvTapStep.position and SvTapStep.continuousPosition.</p>
+<p class="note">Please see the profile comments on the IEC61970CIMVersion class for the profile version comments.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="LoadResponseCharacteristic" class="group">
+<a href="#LoadResponseCharacteristic">
+<h2 class="concrete">LoadResponseCharacteristic</h2>
+</a>
+<p class="package">LoadModel</p>
+<p class="comment">Models the characteristic response of the load demand due to to changes in system conditions such as voltage and frequency. This is not related to demand response.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="LoadResponseCharacteristic.exponentModel">exponentModel</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">Indicates the exponential voltage dependency model (pVoltateExponent and qVoltageExponent) is to be used.   If false, the coeficient model (consisting of pConstantImpedance, pConstantCurrent, pConstantPower, qConstantImpedance, qConstantCurrent, and qConstantPower) is to be used.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="LoadResponseCharacteristic.pConstantCurrent">pConstantCurrent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Portion of active power load modeled as constant current. Used only if the useExponentModel is false.    This value is noralized against the sum of pZ, pI, and pP.</p>
+<p class="note"/>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="LoadResponseCharacteristic.pConstantImpedance">pConstantImpedance</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Portion of active power load modeled as constant impedance.  Used only if the useExponentModel is false.    This value is noralized against the sum of pZ, pI, and pP.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="LoadResponseCharacteristic.pConstantPower">pConstantPower</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Portion of active power load modeled as constant power. Used only if the useExponentModel is false.    This value is noralized against the sum of pZ, pI, and pP.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="LoadResponseCharacteristic.pVoltageExponent">pVoltageExponent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Exponent of per unit voltage effecting real power.   This model used only when "useExponentModel" is true.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="LoadResponseCharacteristic.qConstantCurrent">qConstantCurrent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Portion of reactive power load modeled as constant current. Used only if the useExponentModel is false.    This value is noralized against the sum of qZ, qI, and qP.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="LoadResponseCharacteristic.qConstantImpedance">qConstantImpedance</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Portion of reactive power load modeled as constant impedance.  Used only if the useExponentModel is false.    This value is noralized against the sum of qZ, qI, and qP.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="LoadResponseCharacteristic.qConstantPower">qConstantPower</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Portion of reactive power load modeled as constant power. Used only if the useExponentModel is false.    This value is noralized against the sum of qZ, qI, and qP.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="LoadResponseCharacteristic.qVoltageExponent">qVoltageExponent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Exponent of per unit voltage effecting reactive power.   This model used only when "useExponentModel" is true.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="MutualCoupling" class="group">
+<a href="#MutualCoupling">
+<h2 class="concrete">MutualCoupling</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">This class represents the zero sequence line mutual coupling.</p>
+<p class="note">This class is Optional and only used for Short Circuit.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.b0ch">b0ch</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence mutual coupling shunt (charging) susceptance, uniformly distributed, of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.distance11">distance11</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#LongLength">LongLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Distance from the first line's specified terminal to start of coupled region</p>
+<p class="note">Cannot be equal to distance12 and connot be greater than Conductor.length of the referenced line.  The value of Conductor.length attribute must be a positive number.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.distance12">distance12</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#LongLength">LongLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Distance from the first line's from specified terminal to end of coupled region</p>
+<p class="note">Must be greater than the value of distance11 and connot be greater than Conductor.length of the referenced line.  The value of Conductor.length attribute must be a positive number.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.distance21">distance21</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#LongLength">LongLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Distance from the second line's specified terminal to start of coupled region</p>
+<p class="note">Cannot be equal to distance22 and connot be greater than Conductor.length of the referenced line.  The value of Conductor.length attribute must be a positive number.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.distance22">distance22</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#LongLength">LongLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Distance from the second line's specified terminal to end of coupled region</p>
+<p class="note">Must be greater than the value of distance21 and connot be greater than Conductor.length of the referenced line.  The value of Conductor.length attribute must be a positive number.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.g0ch">g0ch</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence mutual coupling shunt (charging) conductance, uniformly distributed, of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.r0">r0</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence branch-to-branch mutual impedance coupling, resistance</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.x0">x0</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence branch-to-branch mutual impedance coupling, reactance</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.First_Terminal">First_Terminal</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Terminal">Terminal</a>
+</p>
+</td>
+<td>
+<p class="comment">The starting terminal for the calculation of distances along the first branch of the mutual coupling.  Normally MutualCoupling would only be used for terminals of AC line segments.  The first and second terminals of a mutual coupling should point to different AC line segments.</p>
+<p class="note"/>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="MutualCoupling.Second_Terminal">Second_Terminal</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Terminal">Terminal</a>
+</p>
+</td>
+<td>
+<p class="comment">The starting terminal for the calculation of distances along the second branch of the mutual coupling.</p>
+<p class="note"/>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="NuclearGeneratingUnit" class="group">
+<a href="#NuclearGeneratingUnit">
+<h2 class="concrete">NuclearGeneratingUnit</h2>
+</a>
+<p class="package">Production</p>
+<p class="comment">A nuclear generating unit.</p>
+<h3>Inherited Members</h3>
+</div>
+<div id="OperationalLimitSet" class="group">
+<a href="#OperationalLimitSet">
+<h2 class="concrete">OperationalLimitSet</h2>
+</a>
+<p class="package">OperationalLimits</p>
+<p class="comment">A set of limits associated with equipmnet.  Sets of limits might apply to a specific temperature, or season for example. A set of limits may contain may different severiteis of limit levels that would apply to the same equipment.   The set may contain limits of different types such as apparent power and current limits or high and low voltage limits  that are logically applied together as a set.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="OperationalLimitSet.Terminal">Terminal</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Terminal">Terminal</a>
+</p>
+</td>
+<td>
+<p class="comment">The terminal specifically associated to this operational limit set.  If no terminal is associated, all terminals of the equipment are implied.</p>
+<p class="note">For UCTE profile, the terminal associated with the limit is always required, and thus there is no need to exchange the associated Equipment which can always be derived from the terminal.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="OperationalLimitType" class="group">
+<a href="#OperationalLimitType">
+<h2 class="concrete">OperationalLimitType</h2>
+</a>
+<p class="package">OperationalLimits</p>
+<p class="comment">A type of limit.  The meaning of a specific limit is described in this class.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="OperationalLimitType.acceptableDuration">acceptableDuration</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Seconds">Seconds</a>
+</p>
+</td>
+<td>
+<p class="comment">The nominal acceptable duration of the limit.  Limits are commonly expressed in terms of the a time limit for which the limit is normally acceptable.   The actual acceptable duration of a specific limit may depend on other local factors such as temperature or wind speed.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="OperationalLimitType.direction">direction</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#OperationalLimitDirectionKind">OperationalLimitDirectionKind</a>
+</p>
+</td>
+<td>
+<p class="comment">The direction of the limit.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PhaseTapChanger" class="group">
+<a href="#PhaseTapChanger">
+<h2 class="concrete">PhaseTapChanger</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A specialization of a voltage tap changer that has detailed modeling for phase shifting capabilities.   A phase shifting tap changer is also in general a voltage magnitude transformer.    The symmetrical and asymmetrical transformer tap changer models are defined here.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="PhaseTapChanger.phaseTapChangerType">phaseTapChangerType</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PhaseTapChangerKind">PhaseTapChangerKind</a>
+</p>
+</td>
+<td>
+<p class="comment">The type of phase shifter construction.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseTapChanger.stepPhaseShiftIncrement">stepPhaseShiftIncrement</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AngleDegrees">AngleDegrees</a>
+</p>
+</td>
+<td>
+<p class="comment">Phase shift per step position. A positive value indicates a positive phase shift from the winding where the tap is located to the other winding (for a two-winding transformer).</p>
+<p class="comment">The actual phase shift increment might be more accureatly computed from the symmetrical or asymmetrical models or a tap step table lookup if those are available.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseTapChanger.voltageStepIncrementOutOfPhase">voltageStepIncrementOutOfPhase</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+<p class="comment">The voltage step increment on the out of phase winding.    This voltage step on the out of phase winding of the phase shifter.  Similar to TapChanger.voltageStepIncrement, but it is applied only to the out of phase winding.</p>
+<p class="note">This is required if PST is Asymmetrical.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseTapChanger.windingConnectionAngle">windingConnectionAngle</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AngleDegrees">AngleDegrees</a>
+</p>
+</td>
+<td>
+<p class="comment">The phase angle between the in-phase winding and the out-of -phase winding used for creating phase shift.   It is only possible to have a symmemtrical transformer if this angle is 90 degrees.</p>
+<p class="note">This is required if PST is Asymmetrical</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseTapChanger.xStepMax">xStepMax</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">The reactance at the maximum tap step.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseTapChanger.xStepMin">xStepMin</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">The reactance at the minimum tap step.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="PhaseTapChanger.TransformerWinding">TransformerWinding</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#TransformerWinding">TransformerWinding</a>
+</p>
+</td>
+<td>
+<p class="comment">The transformer winding to which the phase tap changer belongs.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">highStep</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.highStep">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">lowStep</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.lowStep">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">neutralStep</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.neutralStep">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">neutralU</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.neutralU">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">stepVoltageIncrement</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerCent">PerCent</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.stepVoltageIncrement">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">RegulatingControl</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#RegulatingControl">RegulatingControl</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.RegulatingControl">TapChanger</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PowerTransformer" class="group">
+<a href="#PowerTransformer">
+<h2 class="concrete">PowerTransformer</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">An electrical device consisting of  two or more coupled windings, with or without a magnetic core, for introducing mutual coupling between electric circuits. Transformers can be used to control voltage and phase shift (active power flow).</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="RatioTapChanger" class="group">
+<a href="#RatioTapChanger">
+<h2 class="concrete">RatioTapChanger</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A tap changer that changes the voltage ratio impacting the voltage magnitude but not direclty the phase angle across the transformer..</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="RatioTapChanger.TransformerWinding">TransformerWinding</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#TransformerWinding">TransformerWinding</a>
+</p>
+</td>
+<td>
+<p class="comment">The transformer winding to which the ratio tap changer belongs.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">highStep</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.highStep">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">lowStep</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.lowStep">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">neutralStep</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.neutralStep">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">neutralU</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.neutralU">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">stepVoltageIncrement</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerCent">PerCent</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.stepVoltageIncrement">TapChanger</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">RegulatingControl</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#RegulatingControl">RegulatingControl</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TapChanger.RegulatingControl">TapChanger</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ReactiveCapabilityCurve" class="group">
+<a href="#ReactiveCapabilityCurve">
+<h2 class="concrete">ReactiveCapabilityCurve</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Reactive power rating envelope versus the synchronous machine's active power, in both the generating and motoring modes. For each active power value there is a corresponding high and low reactive power limit  value. Typically there will be a separate curve for each coolant condition, such as hydrogen pressure.  The Y1 axis values represent reactive minimum and the Y2 axis values represent reactive maximum.</p>
+<p class="note">By convention in this profile, the CurveData points have y1multiplier of M, y2Multiplier of M, y1Units of W and y2Units of W,  xUnits of W and xMultiplier of M.</p>
+<h3>Inherited Members</h3>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="RegulatingControl" class="group">
+<a href="#RegulatingControl">
+<h2 class="concrete">RegulatingControl</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Specifies a set of equipment that works together to control a power system quantity such as voltage or flow.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="RegulatingControl.discrete">discrete</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">The regulation is performed in a discrete mode.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="RegulatingControl.mode">mode</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#RegulatingControlModeKind">RegulatingControlModeKind</a>
+</p>
+</td>
+<td>
+<p class="comment">The regulating control mode presently available.  This specifications allows for determining the kind of regualation without need for obtaining the units from a schedule.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="RegulatingControl.targetRange">targetRange</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">This is the case input target range.   This performs the same function as the value2 attribute on the regulation schedule in the case that schedules are not used.   The units of those appropriate for the mode.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="RegulatingControl.targetValue">targetValue</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">The target value specified for case input.   This value can be used for the target value wihout the use of schedules. The value has the units appropriate to the mode attribute.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="RegulatingControl.Terminal">Terminal</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Terminal">Terminal</a>
+</p>
+</td>
+<td>
+<p class="comment">The terminal associated with this regulating control.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ShuntCompensator" class="group">
+<a href="#ShuntCompensator">
+<h2 class="concrete">ShuntCompensator</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors. A section of a shunt compensator is an individual capacitor or reactor.  Negative values for mVArPerSection and nominalMVAr indicate that the compensator is a reactor.</p>
+<p class="note">mVArPerSection and nominalMVAr is now bPerSection.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="ShuntCompensator.b0PerSection">b0PerSection</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence shunt (charging) susceptance per section</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ShuntCompensator.bPerSection">bPerSection</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence shunt (charging) susceptance per section</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ShuntCompensator.g0PerSection">g0PerSection</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence shunt (charging) conductance per section</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ShuntCompensator.gPerSection">gPerSection</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence shunt (charging) conductance per section</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="ShuntCompensator.maximumSections">maximumSections</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p class="comment">For a capacitor bank, the maximum number of sections that may be switched in.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">RegulatingControl</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#RegulatingControl">RegulatingControl</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#RegulatingCondEq.RegulatingControl">RegulatingCondEq</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#ConductingEquipment.BaseVoltage">ConductingEquipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SubGeographicalRegion" class="group">
+<a href="#SubGeographicalRegion">
+<h2 class="concrete">SubGeographicalRegion</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">A subset of a geographical region of a power system network model.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="SubGeographicalRegion.Region">Region</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#GeographicalRegion">GeographicalRegion</a>
+</p>
+</td>
+<td>
+<p class="comment">The association is used in the naming hierarchy.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Substation" class="group">
+<a href="#Substation">
+<h2 class="concrete">Substation</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">A collection of equipment for purposes other than generation or utilization, through which electric energy in bulk is passed for the purposes of switching or modifying its characteristics.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Substation.Region">Region</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#SubGeographicalRegion">SubGeographicalRegion</a>
+</p>
+</td>
+<td>
+<p class="comment">The association is used in the naming hierarchy.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table/>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SvPowerFlow" class="group">
+<a href="#SvPowerFlow">
+<h2 class="concrete">SvPowerFlow</h2>
+</a>
+<p class="package">StateVariables</p>
+<p class="comment">State variable for power flow.</p>
+<p class="note">Only Terminal instances of EnergyConsumer and SynchronousMachine will have SvPowerFlow instances assigned.</p>
+<p class="note">The number of SvPowerFlow instances in the model should match the number EnergyConsumer plus SynchronousMachine objects in the model regardless of the Terminal.connected values.</p>
+<p class="note">Any SvPowerFlow with a Terminal.connected value of false must have zero flow explicitly specified on an SvPowerFlow instance.</p>
+<p class="note">The other types of terminals are not included in exchanges since their values can be readily computed from local voltages and attributes without a global powerflow solution.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="SvPowerFlow.p">p</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ActivePower">ActivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">The active power flow into the terminal.</p>
+<p class="note">If the associated Terminal.connected status is "false", the flow specified in the SvPowerFlow.p should be zero.</p>
+<p class="note">The power flow is into the Terminal of the ConductingEquipment.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SvPowerFlow.q">q</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ReactivePower">ReactivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">The reactive power flow into the terminal.</p>
+<p class="note">If the associated Terminal.connected status is "false", the flow specified in the SvPowerFlow.q should be zero.</p>
+<p class="note">The power flow is into the Terminal of the ConductingEquipment.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SvPowerFlow.Terminal">Terminal</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Terminal">Terminal</a>
+</p>
+</td>
+<td>
+<p class="comment">The terminal associated with the power flow state.</p>
+<p class="note">The SvPowerFlow is only associated with the Terminal objects of shunt injection classes EnergyConsumer and  SynchronousMachine.</p>
+<p class="note">Branch flows are not exchanged since they can be readily computed from the voltages, impedances, and for transformers additionally the tap parameters including the SvTapStep.</p>
+<p class="note">Similarly, Switch flows are not included because they can typically be uniquely computed, except in the case of meshed networks of Switch objects.</p>
+<p class="note">Terminals of the ShuntCompensator class are not associated because the injection value can be computed from the solved voltage, number of sections, Termianl.connected state, and the impedance per section attributes on the ShuntCompensator.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table/>
+</div>
+<div id="SvShuntCompensatorSections" class="group">
+<a href="#SvShuntCompensatorSections">
+<h2 class="concrete">SvShuntCompensatorSections</h2>
+</a>
+<p class="package">StateVariables</p>
+<p class="comment">State variable for the number of sections in service for a shunt compensator.</p>
+<p class="note">A SvShuntCompensator is always associated with any instance of ShuntCompensator.   The sections or continuousSections values are specified depending upon the value of the associated RegulatingControl.discrete attribute.  If no RegulatingControl is associated, then the ShuntCompensator is treated as discrete.    In discrete mode, the "sections" attribute must be present.   In the not "discrete" mode (continuous mode) the "continuousSections" attribute must be present.     In the case the Terminal.connected value is "false" the specificed number of sections is not meaningful to the powerflow solution and powerflow implementations should interpret this as zero injection.   Note that an SvShuntCompensatorSections should be supplied even for ShuntCompensators whose Terminal.connected status is "false" to keep total number of ShuntCompensator and SvShuntCompensatorSection objects in the model the same.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="SvShuntCompensatorSections.continuousSections">continuousSections</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">The number of sections in service as a continous variable.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SvShuntCompensatorSections.ShuntCompensator">ShuntCompensator</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ShuntCompensator">ShuntCompensator</a>
+</p>
+</td>
+<td>
+<p class="comment">The shunt compensator for which the state applies.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table/>
+</div>
+<div id="SvTapStep" class="group">
+<a href="#SvTapStep">
+<h2 class="concrete">SvTapStep</h2>
+</a>
+<p class="package">StateVariables</p>
+<p class="comment">State variable for transformer tap step.     Normally a profile specifies only one of the attributes "position"or "continuousPosition".</p>
+<p class="note">SvTapStep is only meant to be used for taps that change under load.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="SvTapStep.continuousPosition">continuousPosition</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">The floating point tap position.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SvTapStep.TapChanger">TapChanger</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#TapChanger">TapChanger</a>
+</p>
+</td>
+<td>
+<p class="comment">The tap changer associated with the tap step state.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table/>
+</div>
+<div id="SvVoltage" class="group">
+<a href="#SvVoltage">
+<h2 class="concrete">SvVoltage</h2>
+</a>
+<p class="package">StateVariables</p>
+<p class="comment">State variable for voltage.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="SvVoltage.angle">angle</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#AngleRadians">AngleRadians</a>
+</p>
+</td>
+<td>
+<p class="comment">The voltage angle in radians of the topological node.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SvVoltage.v">v</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+<p class="comment">The voltage magnitude of the topological node.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SvVoltage.TopologicalNode">TopologicalNode</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#TopologicalNode">TopologicalNode</a>
+</p>
+</td>
+<td>
+<p class="comment">The topological node associated with the voltage state.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table/>
+</div>
+<div id="Switch" class="group">
+<a href="#Switch">
+<h2 class="concrete">Switch</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A generic device designed to close, or open, or both, one or more electric circuits.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#ConductingEquipment.BaseVoltage">ConductingEquipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SynchronousMachine" class="group">
+<a href="#SynchronousMachine">
+<h2 class="concrete">SynchronousMachine</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">An electromechanical device that operates synchronously with the network. It is a single machine operating either as a generator or synchronous condenser or pump.</p>
+<p class="note">In this profile:</p>
+<p class="note">- If a SynchronousMachine is not associated with a ReactiveCapabilityCurve, then the minQ and maxQ attributes will be used.</p>
+<p class="note">- If a ReactiveCapabilityCurve is supplied, then the minQ and maxQ attributes are not required.</p>
+<p class="note">- For UCTE, there is no synchronous condenser mode; therefore, the SynchronousMachine must be associated with one and only one  GeneratingUnit.  In this case, the type and operatingMode attributes must both be set to “condenser”.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.maxQ">maxQ</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ReactivePower">ReactivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">Maximum reactive power limit. This is the maximum (nameplate) limit for the unit.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.minQ">minQ</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ReactivePower">ReactivePower</a>
+</p>
+</td>
+<td>
+<p class="comment">Minimum reactive power limit for the unit.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.operatingMode">operatingMode</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#SynchronousMachineOperatingMode">SynchronousMachineOperatingMode</a>
+</p>
+</td>
+<td>
+<p class="comment">Current mode of operation.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.qPercent">qPercent</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerCent">PerCent</a>
+</p>
+</td>
+<td>
+<p class="comment">Percent of the coordinated reactive control that comes from this machine.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.r">r</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence resistance of the synchronous machine.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.r0">r0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence resistance of the synchronous machine.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.r2">r2</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Negative sequence resistance.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.ratedS">ratedS</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ApparentPower">ApparentPower</a>
+</p>
+</td>
+<td>
+<p class="comment">Nameplate apparent power rating for the unit</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.type">type</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#SynchronousMachineType">SynchronousMachineType</a>
+</p>
+</td>
+<td>
+<p class="comment">Modes that this synchronous machine can operate in.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.x">x</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence reactance of the synchronous machine.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.x0">x0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence reactance of the synchronous machine.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.x2">x2</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Negative sequence reactance.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.InitialReactiveCapabilityCurve">InitialReactiveCapabilityCurve</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ReactiveCapabilityCurve">ReactiveCapabilityCurve</a>
+</p>
+</td>
+<td>
+<p class="comment">The default ReactiveCapabilityCurve for use by a SynchronousMachine</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="SynchronousMachine.MemberOf_GeneratingUnit">MemberOf_GeneratingUnit</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#GeneratingUnit">GeneratingUnit</a>
+</p>
+</td>
+<td>
+<p class="comment">A synchronous machine may operate as a generator and as such becomes a member of a generating unit</p>
+<p class="note">Each SynchronousMachine is a member of one and only one GeneratingUnit plus each GeneratingUnit should have one and only one SynchronousMachine.   This is required to properly proportion generation limits specified on GeneratingUnit to the appropriate injection points specified by SynchronousMachine and its Terminal connection.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">RegulatingControl</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#RegulatingControl">RegulatingControl</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#RegulatingCondEq.RegulatingControl">RegulatingCondEq</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#ConductingEquipment.BaseVoltage">ConductingEquipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Terminal" class="group">
+<a href="#Terminal">
+<h2 class="concrete">Terminal</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">An electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called "connectivity nodes".</p>
+<p class="note">The SvPowerFlow is only associated with the Terminal objects of shunt injection classes such as EnergyConsumer and SynchronousMachine.   The flows at any ShuntCompensator can always be computed from connected voltage magnitude, number of sections and local attributes.</p>
+<p class="note">Branch flows are not exchanged since they can be readily be computed from the voltages, impedances, and for transformers additionally the tap parameters including the SvTapStep.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Terminal.connected">connected</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">The terminal connection status.   True implies the terminal is connected, and false implies the terminal is not connected. This is the result of topoplogical processing of a detailed Connectivity node and Switch model whether present in the model or not.   A terminal that is not connected cannot support a current flow.   A terminal that is connected may have flow.  In general a multi-terminal device may simultaneously have connected and disconnected terminals.  No other aspect of the algorithm for topological analysis is implied.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Terminal.sequenceNumber">sequenceNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p class="comment">The orientation of the terminal connections for a multiple terminal conducting equipment.  The sequence numbering starts with 1 and additional terminals should follow in increasing order.   The first terminal is the "starting point" for a two terminal branch.   In the case of class TransformerWinding only one terminal is used so its sequenceNumber must be 1.</p>
+<p class="note">For UCTE profile, the terminal sequence number is not required.   And, when used, follows the UML description.</p>
+<p class="note">The orientation of the terminal connections for a multiple terminal conducting equipment.  The sequence numbering starts with 1 and additional terminals should follow in increasing order.   The first terminal is the "starting point" for a two terminal branch.   In the case of class TransformerWinding only one terminal is used so its sequenceNumber must be 1.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Terminal.ConductingEquipment">ConductingEquipment</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ConductingEquipment">ConductingEquipment</a>
+</p>
+</td>
+<td>
+<p class="comment">ConductingEquipment has 1 or 2 terminals that may be connected to other ConductingEquipment terminals via ConnectivityNodes</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Terminal.TopologicalNode">TopologicalNode</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#TopologicalNode">TopologicalNode</a>
+</p>
+</td>
+<td>
+<p class="comment">The topological node associated with the terminal.   This can be used as an alternative to the connectivity node path to topological node, thus making it unneccesary to model connedtivity nodes in some cases.   Note that the if connectivity nodes are in the model, this association would proably not be used.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ThermalGeneratingUnit" class="group">
+<a href="#ThermalGeneratingUnit">
+<h2 class="concrete">ThermalGeneratingUnit</h2>
+</a>
+<p class="package">Production</p>
+<p class="comment">A generating unit whose prime mover could be a steam turbine, combustion turbine, or diesel engine.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="ThermalGeneratingUnit.FossilFuels">FossilFuels</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#FossilFuel">FossilFuel</a>
+</p>
+</td>
+<td>
+<p class="comment">A thermal generating unit may have one or more fossil fuels</p>
+<p class="note">The UCTE profile allows only one type of fuel per ThermalGeneratingUnit.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+</div>
+<div id="TieFlow" class="group">
+<a href="#TieFlow">
+<h2 class="concrete">TieFlow</h2>
+</a>
+<p class="package">ControlArea</p>
+<p class="comment">A flow specification in terms of location and direction for a control area.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="TieFlow.positiveFlowIn">positiveFlowIn</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">The flow is positive into the terminal.  A flow is positive if it is an import into the control area.</p>
+<p class="note">The power flow is positive into the Terminal of the ConductingEquipment.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TieFlow.ControlArea">ControlArea</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ControlArea">ControlArea</a>
+</p>
+</td>
+<td>
+<p class="comment">The control area of the tie flows.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TieFlow.Terminal">Terminal</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Terminal">Terminal</a>
+</p>
+</td>
+<td>
+<p class="comment">The terminal to which this tie flow belongs.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="TopologicalIsland" class="group">
+<a href="#TopologicalIsland">
+<h2 class="concrete">TopologicalIsland</h2>
+</a>
+<p class="package">Topology</p>
+<p class="comment">An electrically connected subset of the network. Topological islands can change as the current network state changes (i.e., disconnect switches, breakers, etc. change state).</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="TopologicalIsland.AngleRef_TopologicalNode">AngleRef_TopologicalNode</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#TopologicalNode">TopologicalNode</a>
+</p>
+</td>
+<td>
+<p class="comment">The angle reference for the island.   Normally there is one TopologicalNode that is selected as the angle reference for each island.   Other reference schemes exist, so the association is optional.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="TopologicalNode" class="group">
+<a href="#TopologicalNode">
+<h2 class="concrete">TopologicalNode</h2>
+</a>
+<p class="package">Topology</p>
+<p class="comment">A set of connectivity nodes that, in the current network state, are connected together through any type of closed switches, including  jumpers. Topological nodes can change as the current network state changes (i.e., switches, breakers, etc. change state).</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="TopologicalNode.equivalent">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">The topological node is equivalent and not real equipment.</p>
+<p class="note">If this is missing, it is assumed to be False.  If it is an X-Node, this equivalent is required.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TopologicalNode.r0PerR">r0PerR</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">The ratio of zero sequence resistance to positive sequence resistance.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TopologicalNode.sShortCircuit">sShortCircuit</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ApparentPower">ApparentPower</a>
+</p>
+</td>
+<td>
+<p class="comment">The short circuit apparent power drawn at this node when faulted.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TopologicalNode.x0PerX">x0PerX</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">The ratio of zero sequence reactance per positive sequence reactance.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TopologicalNode.xPerR">xPerR</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">float</p>
+</td>
+<td>
+<p class="comment">Ratio of positive sequence reactance per postive sequence resistance.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TopologicalNode.BaseVoltage">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p class="comment">The base voltage of the topologocial node.</p>
+<p class="note">The base voltage of the TopologicalNode should match the BaseVoltage of the containing VoltageLevel if such a containing VoltageLevel is specified.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TopologicalNode.ConnectivityNodeContainer">ConnectivityNodeContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ConnectivityNodeContainer">ConnectivityNodeContainer</a>
+</p>
+</td>
+<td>
+<p class="comment">The connectivity node container to which the toplogical node belongs.</p>
+<p class="note">The TopologicalNode will normally belong only to a VoltageLevel instance within a Substation.   All instances of TopologicalNode that are not X-nodes will require an association to a containing VoltageLevel instance.  The BaseVoltage of the VoltageLevel should match that of the TopologicalNode itself.</p>
+<p class="note">A TopologicalNode object used for an X-node will not be contained, thus this association is specified as optional in the profile.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TopologicalNode.ControlArea">ControlArea</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ControlArea">ControlArea</a>
+</p>
+</td>
+<td>
+<p class="comment">The control area into which the node is included.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TopologicalNode.TopologicalIsland">TopologicalIsland</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#TopologicalIsland">TopologicalIsland</a>
+</p>
+</td>
+<td>
+<p class="comment">A topological node belongs to a topological island</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="TransformerWinding" class="group">
+<a href="#TransformerWinding">
+<h2 class="concrete">TransformerWinding</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A winding is associated with each defined terminal of a transformer (or phase shifter).</p>
+<p class="note">The association between the TransformerWinding class and MemberOf_EquipmentContainer is not used in this Profile since the association to Power Transformer is already there.  The only time this association should be used is if the association refers to a different substation than what is used in the PowerTransformer association.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.b">b</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p class="comment">Magnetizing branch susceptance (B mag).</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.b0">b0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence magnetizing branch susceptance.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.connectionType">connectionType</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#WindingConnection">WindingConnection</a>
+</p>
+</td>
+<td>
+<p class="comment">The type of connection of the winding.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.g">g</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p class="comment">Magnetizing branch conductance (G mag).</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.g0">g0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence magnetizing branch conductance.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.r">r</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence series resistance of the winding.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.r0">r0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence series resistance of the winding.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.ratedS">ratedS</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ApparentPower">ApparentPower</a>
+</p>
+</td>
+<td>
+<p class="comment">The normal apparent power rating for the winding</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.ratedU">ratedU</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+<p class="comment">The rated voltage (phase-to-phase) of the winding, usually the same as the neutral voltage.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.rground">rground</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Ground resistance path through connected grounding transformer.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.windingType">windingType</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#WindingType">WindingType</a>
+</p>
+</td>
+<td>
+<p class="comment">The type of winding.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.x">x</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence series reactance of the winding.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.x0">x0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence series reactance of the winding.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.xground">xground</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Ground reactance path through connected grounding transformer.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TransformerWinding.MemberOf_PowerTransformer">MemberOf_PowerTransformer</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PowerTransformer">PowerTransformer</a>
+</p>
+</td>
+<td>
+<p class="comment">A transformer has windings</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#ConductingEquipment.BaseVoltage">ConductingEquipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="VoltageLevel" class="group">
+<a href="#VoltageLevel">
+<h2 class="concrete">VoltageLevel</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">A collection of equipment at one common system voltage forming a switchgear. The equipment typically consist of breakers, busbars, instrumentation, control, regulation and protection devices as well as assemblies of all these.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="VoltageLevel.BaseVoltage">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p class="comment">The base voltage used for all equipment within the VoltageLevel.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="VoltageLevel.MemberOf_Substation">MemberOf_Substation</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Substation">Substation</a>
+</p>
+</td>
+<td>
+<p class="comment">The association is used in the naming hierarchy.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table/>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="VoltageLimit" class="group">
+<a href="#VoltageLimit">
+<h2 class="concrete">VoltageLimit</h2>
+</a>
+<p class="package">OperationalLimits</p>
+<p class="comment">Operational limit applied to voltage.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="VoltageLimit.value">value</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+<p class="comment">Limit on voltage. High or low limit depends on the OperatoinalLimit.limitKind</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">OperationalLimitSet</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#OperationalLimitSet">OperationalLimitSet</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#OperationalLimit.OperationalLimitSet">OperationalLimit</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">OperationalLimitType</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#OperationalLimitType">OperationalLimitType</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#OperationalLimit.OperationalLimitType">OperationalLimit</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="WindGeneratingUnit" class="group">
+<a href="#WindGeneratingUnit">
+<h2 class="concrete">WindGeneratingUnit</h2>
+</a>
+<p class="package">Production</p>
+<p class="comment">A wind driven generating unit.</p>
+<h3>Inherited Members</h3>
+</div>
+<h1>Abstract Classes</h1>
+<div id="BusbarSection" class="group">
+<a href="#BusbarSection">
+<h2 class="abstract">BusbarSection</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation.</p>
+<p class="comment">Voltage measurements are typically obtained from VoltageTransformers that are connected to busbar sections. A bus bar section may have many physical terminals but for analysis is modelled with exactly one logical terminal.</p>
+<p class="note">Terminals of Switches can also be used for regulation.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="BusbarSection.VoltageControlZone">VoltageControlZone</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#VoltageControlZone">VoltageControlZone</a>
+</p>
+</td>
+<td>
+<p class="comment">A VoltageControlZone is controlled by a designated BusbarSection.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ConductingEquipment" class="group">
+<a href="#ConductingEquipment">
+<h2 class="abstract">ConductingEquipment</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">The parts of the power system that are designed to carry current or that are conductively connected therewith. ConductingEquipment is contained within an EquipmentContainer that may be a Substation, or a VoltageLevel or a Bay within a Substation.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="ConductingEquipment.BaseVoltage">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p class="comment">Use association to ConductingEquipment only when there is no VoltageLevel container used.</p>
+<p class="note">The profile requires a BaseVoltage associaton on ConductingEquipment subtypes of classes ACLineSegment and TransformerWinding. The association is not used for any other subtypes.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Conductor" class="group">
+<a href="#Conductor">
+<h2 class="abstract">Conductor</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Conductor.b0ch">b0ch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Conductor.bch">bch</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Susceptance">Susceptance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Conductor.g0ch">g0ch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence shunt (charging) conductance, uniformly distributed, of the entire line section.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Conductor.gch">gch</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Conductance">Conductance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence shunt (charging) conductance, uniformly distributed, of the entire line section.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Conductor.length">length</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#LongLength">LongLength</a>
+</p>
+</td>
+<td>
+<p class="comment">Segment length for calculating line section capabilities</p>
+<p class="note">Required only for ACLineSegement objects involved in MutualCoupling.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Conductor.r">r</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence series resistance of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Conductor.r0">r0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Resistance">Resistance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence series resistance of the entire line section.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Conductor.x">x</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Positive sequence series reactance of the entire line section.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Conductor.x0">x0</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Reactance">Reactance</a>
+</p>
+</td>
+<td>
+<p class="comment">Zero sequence series reactance of the entire line section.</p>
+<p class="note">This is for Short Circuit only.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#ConductingEquipment.BaseVoltage">ConductingEquipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="ConnectivityNodeContainer" class="group">
+<a href="#ConnectivityNodeContainer">
+<h2 class="abstract">ConnectivityNodeContainer</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">A base class for all objects that may contain ConnectivityNodes or TopologicalNodes.</p>
+<p class="note">The TopologicalNode will normally belong only to a VoltageLevel within a Substation.</p>
+<p class="note">In the case of X-nodes, the TopologicalNode is not contained.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Curve" class="group">
+<a href="#Curve">
+<h2 class="abstract">Curve</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">Relationship between an independent variable (X-axis) and one or two dependent</p>
+<p class="comment">variables (Y1-axis and Y2-axis). Curves can also serve as schedules.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Equipment" class="group">
+<a href="#Equipment">
+<h2 class="abstract">Equipment</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">The parts of a power system that are physical devices, electronic or mechanical</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Equipment.equivalent">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">Indicates if the equipment is real equipment (false) or an equivalent.</p>
+<p class="note">If this is missing, it is assumed to be False.  It is required for Equipment connected to the X-Node.</p>
+<p class="note">All classes derived from Equipment are to include this attribute except for the TransformerWinding class.     For transformers the PowerTransformer class will be used to specify the real or equivalent status and the contained TransformerWinding class instances need not and should not specify this attribute.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Equipment.MemberOf_EquipmentContainer">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p class="comment">The association is used in the naming hierarchy.</p>
+<p class="note">For a TransformerWinding and ACLineSegment, the association Equipment.MemberOf_EquipmentContainer is not used.  The TransformerWinding instance is instead contained within a PowerTransformer unless the association refers to a different substation than what is used in the PowerTransformer association.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="EquipmentContainer" class="group">
+<a href="#EquipmentContainer">
+<h2 class="abstract">EquipmentContainer</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">A modeling construct to provide a root class for all Equipment classes</p>
+<p class="note">For a TransformerWinding the association Equipment.MemberOf_EquipmentContainer is not used.  The TransformerWinding instance is instead contained within a PowerTransformer unless the association refers to a different substation than what is used in the PowerTransformer Association.</p>
+<h3>Inherited Members</h3>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="EquivalentEquipment" class="group">
+<a href="#EquivalentEquipment">
+<h2 class="abstract">EquivalentEquipment</h2>
+</a>
+<p class="package">Equivalents</p>
+<p class="comment">The class represents equivalent objects that are the result of a network reduction. The class is the base for equivalent objects of different types.</p>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#ConductingEquipment.BaseVoltage">ConductingEquipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="IdentifiedObject" class="group">
+<a href="#IdentifiedObject">
+<h2 class="abstract">IdentifiedObject</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">This is a root class to provide common naming attributes for all classes needing naming attributes</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.aliasName">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy.</p>
+<p class="note">In the UCTE profile the aliasName is used to hold the EIC code.    The code length is 16 characters.    Not all CIM classes have an EIC code so the attribute is optional.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.description">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The name is a free text human readable name of the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+<p class="note">This attribute is required on all instances in this Profile that inherit from IdentifiedObject except for the following Classes: 1) BaseVoltage; 2) Terminal; 3) TransformerWinding; 4) RatioTapChanger; 5) PhaseTapChanger; 6) OperationalLImitSet; 7) CurrentLimit; and, 8) VoltageLimit.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Line" class="group">
+<a href="#Line">
+<h2 class="abstract">Line</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">A component part of a system extending between adjacent substations or from a substation to an adjacent interconnection point.</p>
+<h3>Inherited Members</h3>
+<table/>
+<table/>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="OperationalLimit" class="group">
+<a href="#OperationalLimit">
+<h2 class="abstract">OperationalLimit</h2>
+</a>
+<p class="package">OperationalLimits</p>
+<p class="comment">A value associated with a specific kind of limit.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="OperationalLimit.OperationalLimitSet">OperationalLimitSet</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#OperationalLimitSet">OperationalLimitSet</a>
+</p>
+</td>
+<td>
+<p class="comment">The limit set to which the limit values belong.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="OperationalLimit.OperationalLimitType">OperationalLimitType</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#OperationalLimitType">OperationalLimitType</a>
+</p>
+</td>
+<td>
+<p class="comment">The limit type associated with this limit.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="RegulatingCondEq" class="group">
+<a href="#RegulatingCondEq">
+<h2 class="abstract">RegulatingCondEq</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">RegulatingCondEq is a type of ConductingEquipment that can regulate Measurements and have a RegulationSchedule.</p>
+<p class="note"/>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="RegulatingCondEq.RegulatingControl">RegulatingControl</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#RegulatingControl">RegulatingControl</a>
+</p>
+</td>
+<td>
+<p class="comment">copy from ...</p>
+<p class="note">Regulating control scheme in which this equipment participates.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">BaseVoltage</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#BaseVoltage">BaseVoltage</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#ConductingEquipment.BaseVoltage">ConductingEquipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">equivalent</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.equivalent">Equipment</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MemberOf_EquipmentContainer</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#EquipmentContainer">EquipmentContainer</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Equipment.MemberOf_EquipmentContainer">Equipment</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="StateVariable" class="group">
+<a href="#StateVariable">
+<h2 class="abstract">StateVariable</h2>
+</a>
+<p class="package">StateVariables</p>
+<p class="comment">An abstract class for state variables.</p>
+</div>
+<div id="TapChanger" class="group">
+<a href="#TapChanger">
+<h2 class="abstract">TapChanger</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Mechanism for changing transformer winding tap positions.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="TapChanger.highStep">highStep</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p class="comment">Highest possible tap step position, advance from neutral</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TapChanger.lowStep">lowStep</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p class="comment">Lowest possible tap step position, retard from neutral</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TapChanger.neutralStep">neutralStep</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p class="comment">The neutral tap step position for this winding.</p>
+<p class="note">This attribute is used to define the neutral step for a tap changer or a phase tap changer.</p>
+<p class="note">The neutralStep value cannot be higher than the highStep value or lower than the lowStep value.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TapChanger.neutralU">neutralU</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Voltage">Voltage</a>
+</p>
+</td>
+<td>
+<p class="comment">Voltage at which the winding operates at the neutral tap setting.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TapChanger.stepVoltageIncrement">stepVoltageIncrement</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#PerCent">PerCent</a>
+</p>
+</td>
+<td>
+<p class="comment">Tap step increment, in per cent of nominal voltage, per step position.</p>
+<p class="comment">This could be supplanted by more detailed model information in either the PhaseTapChanger if modeled or in detailed per tap step table information.</p>
+<p class="note">This is required for RatioTapChanger. It is Optional for most phase shifters since these are not used to regulate voltages</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TapChanger.RegulatingControl">RegulatingControl</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#RegulatingControl">RegulatingControl</a>
+</p>
+</td>
+<td/>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">description</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.description">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Enumerations</h1>
+<div id="FuelType" class="group">
+<a href="#FuelType">
+<h2 class="enumerated">FuelType</h2>
+</a>
+<p class="package">Production</p>
+<p class="comment">Type of fuel.</p>
+<table>
+<tr>
+<th>
+<p class="name">coal</p>
+</th>
+<td>
+<p class="comment">hard coal</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">gas</p>
+</th>
+<td/>
+</tr>
+<tr>
+<th>
+<p class="name">lignite</p>
+</th>
+<td>
+<p class="comment">The fuel is lignite coal.  Note that this is a special type of coal, so the other enum of coal is reserved for hard coal types or if the exact type of coal is not known.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">oil</p>
+</th>
+<td/>
+</tr>
+</table>
+</div>
+<div id="OperationalLimitDirectionKind" class="group">
+<a href="#OperationalLimitDirectionKind">
+<h2 class="enumerated">OperationalLimitDirectionKind</h2>
+</a>
+<p class="package">OperationalLimits</p>
+<p class="comment">The direction of an operational limit.</p>
+<p class="note">For the high and low attributes, the positive direction of the flow is into the Terminal of the ConductingEquipment.</p>
+<table>
+<tr>
+<th>
+<p class="name">absoluteValue</p>
+</th>
+<td>
+<p class="comment">If the absolute value of the monitored value is above the limit value, the limit is violated.  In effect, the limit is both a high limit and its negative a low limit.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">high</p>
+</th>
+<td>
+<p class="comment">The limit is a high limit.   If applied to a terminal flow, the positive direction is into the terminal.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">low</p>
+</th>
+<td>
+<p class="comment">The limit is a low limit.   If applied to a terminal flow, the positive direction is into the terminal.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="PhaseTapChangerKind" class="group">
+<a href="#PhaseTapChangerKind">
+<h2 class="enumerated">PhaseTapChangerKind</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">The construction type of the phase shifting tap changer.</p>
+<p class="note">For the UCTE Profile, the "Unknown" type has been removed for this Enumeration.</p>
+<table>
+<tr>
+<th>
+<p class="name">asymmetrical</p>
+</th>
+<td>
+<p class="comment">Asymmetrical phase shifter construction.     The assymetrical construction type causes the voltage ratio to change as the phase shift changes.   An asymmetrical phase shifter can have the out-of-phase winding connected at 90 degrees or otherwise.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">symmetrical</p>
+</th>
+<td>
+<p class="comment">The phase shifter construction is symmetrical.  A symmetrical construction causes the turns ratio and voltage magnitude transformation to remain constant while the voltage phase is shifted.   A symmetrical construction typically requires the out of phase winding to be connected at 90 degrees.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="RegulatingControlModeKind" class="group">
+<a href="#RegulatingControlModeKind">
+<h2 class="enumerated">RegulatingControlModeKind</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">The kind of regulation model.   For example regulating voltage, reactive power, active power, etc.</p>
+<table>
+<tr>
+<th>
+<p class="name">activePower</p>
+</th>
+<td>
+<p class="comment">Active power is specified.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">admittance</p>
+</th>
+<td>
+<p class="comment">Admittance is specified</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">currentFlow</p>
+</th>
+<td>
+<p class="comment">Current flow is specified.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">fixed</p>
+</th>
+<td>
+<p class="comment">The regulation mode is fixed, and thus not regulating.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">reactivePower</p>
+</th>
+<td>
+<p class="comment">Reactive power is specified.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">voltage</p>
+</th>
+<td>
+<p class="comment">Voltage is specified.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="SynchronousMachineOperatingMode" class="group">
+<a href="#SynchronousMachineOperatingMode">
+<h2 class="enumerated">SynchronousMachineOperatingMode</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Synchronous machine operating mode.</p>
+<table>
+<tr>
+<th>
+<p class="name">condenser</p>
+</th>
+<td/>
+</tr>
+<tr>
+<th>
+<p class="name">generator</p>
+</th>
+<td/>
+</tr>
+</table>
+</div>
+<div id="SynchronousMachineType" class="group">
+<a href="#SynchronousMachineType">
+<h2 class="enumerated">SynchronousMachineType</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Synchronous machine type.</p>
+<table>
+<tr>
+<th>
+<p class="name">condenser</p>
+</th>
+<td/>
+</tr>
+<tr>
+<th>
+<p class="name">generator</p>
+</th>
+<td/>
+</tr>
+<tr>
+<th>
+<p class="name">generator_or_condenser</p>
+</th>
+<td/>
+</tr>
+</table>
+</div>
+<div id="WindingConnection" class="group">
+<a href="#WindingConnection">
+<h2 class="enumerated">WindingConnection</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Winding connection type.</p>
+<table>
+<tr>
+<th>
+<p class="name">D</p>
+</th>
+<td>
+<p class="comment">Delta</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">Y</p>
+</th>
+<td>
+<p class="comment">Wye</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">Z</p>
+</th>
+<td>
+<p class="comment">ZigZag</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="WindingType" class="group">
+<a href="#WindingType">
+<h2 class="enumerated">WindingType</h2>
+</a>
+<p class="package">Wires</p>
+<p class="comment">Winding type.</p>
+<p class="note">For UCTE, a WindingType of Quaternary is not allowed; therefore, that type has been removed from this Enumeration.</p>
+<table>
+<tr>
+<th>
+<p class="name">primary</p>
+</th>
+<td/>
+</tr>
+<tr>
+<th>
+<p class="name">secondary</p>
+</th>
+<td/>
+</tr>
+<tr>
+<th>
+<p class="name">tertiary</p>
+</th>
+<td/>
+</tr>
+</table>
+</div>
+<h1>Datatypes</h1>
+<div id="ActivePower" class="group">
+<a href="#ActivePower">
+<h2 class="domain">ActivePower</h2>
+</a>
+<p class="package"/>
+<p class="comment">Product of RMS value of the voltage and the RMS value of the in-phase component of the current</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="AngleDegrees" class="group">
+<a href="#AngleDegrees">
+<h2 class="domain">AngleDegrees</h2>
+</a>
+<p class="package"/>
+<p class="comment">Measurement of angle in degrees</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="AngleRadians" class="group">
+<a href="#AngleRadians">
+<h2 class="domain">AngleRadians</h2>
+</a>
+<p class="package"/>
+<p class="comment">Phase angle in radians</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="ApparentPower" class="group">
+<a href="#ApparentPower">
+<h2 class="domain">ApparentPower</h2>
+</a>
+<p class="package"/>
+<p class="comment">Product of the RMS value of the voltage and the RMS value of the current</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="Conductance" class="group">
+<a href="#Conductance">
+<h2 class="domain">Conductance</h2>
+</a>
+<p class="package"/>
+<p class="comment">Factor by which voltage must be multiplied to give corresponding power lost from a circuit. Real part of admittance.</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="CurrentFlow" class="group">
+<a href="#CurrentFlow">
+<h2 class="domain">CurrentFlow</h2>
+</a>
+<p class="package"/>
+<p class="comment">Electrical current (positive flow is out of the ConductingEquipment into the ConnectivityNode)</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="LongLength" class="group">
+<a href="#LongLength">
+<h2 class="domain">LongLength</h2>
+</a>
+<p class="package"/>
+<p class="comment">Long unit of length.</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="Money" class="group">
+<a href="#Money">
+<h2 class="domain">Money</h2>
+</a>
+<p class="package"/>
+<p class="comment">Amount of money</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="PerCent" class="group">
+<a href="#PerCent">
+<h2 class="domain">PerCent</h2>
+</a>
+<p class="package"/>
+<p class="comment">Normally 0 - 100 on a defined base</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="Reactance" class="group">
+<a href="#Reactance">
+<h2 class="domain">Reactance</h2>
+</a>
+<p class="package"/>
+<p class="comment">Reactance (imaginary part of impedance), at rated frequency.</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="ReactivePower" class="group">
+<a href="#ReactivePower">
+<h2 class="domain">ReactivePower</h2>
+</a>
+<p class="package"/>
+<p class="comment">Product of RMS value of the voltage and the RMS value of the quadrature component of the current.</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="Resistance" class="group">
+<a href="#Resistance">
+<h2 class="domain">Resistance</h2>
+</a>
+<p class="package"/>
+<p class="comment">Resistance (real part of impedance).</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="Seconds" class="group">
+<a href="#Seconds">
+<h2 class="domain">Seconds</h2>
+</a>
+<p class="package"/>
+<p class="comment">Time, in seconds</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="Susceptance" class="group">
+<a href="#Susceptance">
+<h2 class="domain">Susceptance</h2>
+</a>
+<p class="package"/>
+<p class="comment">Imaginary part of admittance.</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+<div id="Voltage" class="group">
+<a href="#Voltage">
+<h2 class="domain">Voltage</h2>
+</a>
+<p class="package"/>
+<p class="comment">Electrical voltage.</p>
+<p class="declaration">XSD type: <span class="xsdtype">float</span>
+</p>
+</div>
+</body>
+</html>
